@@ -8,7 +8,7 @@ export default function Home() {
         <h1 className="ms-5 me-5 text-6xl md:text-7xl font-mono font-bold text-white mb-20 
           animate-slide-up [--delay:.1s]
           [--glow:drop-shadow(0_0_17px_#828282)_drop-shadow(0_0_5px_#828282)]">
-          Matthew Zhu's Projects and Portfolio
+          Matthew Zhu&apos;s Projects and Portfolio
         </h1>
       </div>     
 
