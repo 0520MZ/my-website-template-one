@@ -23,5 +23,12 @@ export default function Carousel({items }: {items: carouselItem[] }){
 
         //Gets the CSS gap between files.
         const gap = parseFloat(getComputedStyle(elmnt).columnGap || "");
+
+        //Sets the cardWidth based on other values
+        const cardWidth = first ? first.offsetWidth + gap : elmnt.clientWidth;
+
+        //Scroll function
+        elmnt.scrollBy({left: dir * cardWidth, behavior: "smooth"});
     }
+    return;
 }

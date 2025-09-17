@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-linear-to-t/hsl from-gray-800 to-slate-950">
       <div className="flex items-center justify-center h-dvh">
-        <h1 className="ms-5 me-5 text-6xl md:text-7xl font-mono font-bold text-white mb-20 
+        <h1 className="text-6xl md:text-7xl font-mono font-bold text-white mb-10 
           animate-slide-up [--delay:.1s]
           [--glow:drop-shadow(0_0_17px_#828282)_drop-shadow(0_0_5px_#828282)]">
           Matthew Zhu&apos;s Projects and Portfolio
@@ -22,6 +22,8 @@ export default function Home() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
       </a>
+
+      <hr className="w-48 my-2 border-gray-400 mx-auto border-t-4"></hr>
 
       <div className="container mx-auto relative ">
         <h1 id="nextSection"
