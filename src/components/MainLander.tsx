@@ -48,9 +48,12 @@ export function MainLander(){
                 {/*Adds navigation buttons*/}
                 <div className="flex flex-col sm:flex-row gap-8 justify-center items-center mb-16">
                     <button onClick={scrollToProjects} className="bg-gradient-to-r from-sky-800 to-blue-500 border-2 border-blue-600
-                    hover:bg-gradient-to-r hover:from-sky-700 hover:to-blue-400 text-white font-bold py-3 px-9 rounded-lg">View My Work</button>
+                    hover:bg-gradient-to-r hover:from-sky-700 hover:to-blue-400 active:bg-gradient-to-r active:from-sky-700 active:to-blue-400
+                    text-white font-bold py-3 px-8 rounded-lg">View My Work</button>
                     <button onClick={scrollToProjects} className="text-blue-500 font-bold py-3 px-9 border-2 border-blue-600
-                     hover:text-white hover:bg-gradient-to-r hover:from-sky-900 hover:to-blue-600 hover:bg-blue-600 rounded-lg text-center me-2 mb-1">Get In Touch</button>
+                     hover:text-white hover:bg-gradient-to-r hover:from-sky-900 hover:to-blue-600 hover:bg-blue-600 
+                     active:text-white active:bg-gradient-to-r active:from-sky-900 active:to-blue-600 active:bg-blue-600
+                     rounded-lg text-center">Get In Touch</button>
                 </div>
 
             </div>        
