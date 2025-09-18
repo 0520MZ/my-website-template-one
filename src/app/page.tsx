@@ -1,7 +1,5 @@
 "use client";         //Tells next.js to treat this file as a client component - meaning that it will run in the browser.
-import Carousel, {type carouselItem} from '@/components/Carousel';    
 import {MainLander} from "@/components/MainLander";
-import { Main } from 'next/document';
 
 export default function Home() {
   return (
