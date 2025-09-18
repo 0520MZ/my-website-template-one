@@ -1,4 +1,5 @@
 import {TypeAnimation} from "react-type-animation"
+import {Github, Linkedin, Mail} from "lucide-react"
 
 export function MainLander(){
 
@@ -6,7 +7,15 @@ export function MainLander(){
     const scrollToProjects = () => {
         const element = document.getElementById("projects")
         if (element) {
-            element.scrollIntoView({ behavior: "smooth" })
+            element.scrollIntoView({ behavior: "smooth"})
+        }
+    }
+
+    //Adds functionality for the Get In Touch button
+    const scrollToContact = () => {
+        const element = document.getElementById("contact")
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth"})
         }
     }
 
@@ -24,7 +33,7 @@ export function MainLander(){
                 </div>
 
                {/*This div adds the typing animation for traits */}
-                <div className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground mb-8 h-16 text-zinc-400">
+                <div className="text-xl sm:text-2xl lg:text-3xl mb-8 h-16 text-zinc-400">
                     <TypeAnimation
                         sequence={[
                         "Computer Engineer",
@@ -34,8 +43,7 @@ export function MainLander(){
                         "Hardware Designer",
                         2000,
                         "Problem Solver",
-                        2000,
-                        ]}
+                        2000, ]}
                         wrapper="span"
                         speed={75}          //Modifiable speed
                         repeat={Number.POSITIVE_INFINITY}   //Infinite repeat
@@ -47,15 +55,50 @@ export function MainLander(){
 
                 {/*Adds navigation buttons*/}
                 <div className="flex flex-col sm:flex-row gap-8 justify-center items-center mb-16">
-                    <button onClick={scrollToProjects} className="bg-gradient-to-r from-sky-800 to-blue-500 border-2 border-blue-600
-                    hover:bg-gradient-to-r hover:from-sky-700 hover:to-blue-400 active:bg-gradient-to-r active:from-sky-700 active:to-blue-400
-                    text-white font-bold py-3 px-8 rounded-lg">View My Work</button>
-                    <button onClick={scrollToProjects} className="text-blue-500 font-bold py-3 px-9 border-2 border-blue-600
-                     hover:text-white hover:bg-gradient-to-r hover:from-sky-900 hover:to-blue-600 hover:bg-blue-600 
-                     active:text-white active:bg-gradient-to-r active:from-sky-900 active:to-blue-600 active:bg-blue-600
-                     rounded-lg text-center">Get In Touch</button>
+                    <button 
+                        onClick={scrollToProjects}
+                        className="bg-gradient-to-r from-sky-800 to-blue-500 border-2 border-blue-600
+                        hover:bg-gradient-to-r hover:from-sky-700 hover:to-blue-400 active:bg-gradient-to-r active:from-sky-700 active:to-blue-400
+                        text-white font-bold py-3 px-8 rounded-lg">View My Work
+                    </button>
+                    <button 
+                        onClick={scrollToContact} 
+                        className="text-blue-500 font-bold py-3 px-9 border-2 border-blue-600
+                        hover:text-white hover:bg-gradient-to-r hover:from-sky-900 hover:to-blue-600 hover:bg-blue-600 
+                        active:text-white active:bg-gradient-to-r active:from-sky-900 active:to-blue-600 active:bg-blue-600
+                        rounded-lg text-center">Get In Touch
+                    </button>
                 </div>
 
+                {/* Adds contact information methods */}
+                <div className="flex justify-center space-x-6 mb-16">
+                    <a href="https://github.com/0520MZ"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-zinc-400 hover:text-primary transition-colors">
+                        <Github className="h-6 w-6" />
+                    </a>
+                    <a href="https://linkedin.com/in/matthew-zhu-ga"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-zinc-400 hover:text-primary transition-colors">
+                        <Linkedin className="h-6 w-6" />
+                    </a>
+                    <a href="mailto:matthewjzhu0520@gmail.com"
+                        className="text-zinc-400 hover:text-primary transition-colors">
+                        <Mail className="h-6 w-6" />
+                    </a>
+                </div>
+
+                {/* Scroll down button */}
+                <a href="#nextSection" className="absolute -translate-x-1/2">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        className="w-10 h-10 stroke-zinc-400 animate-bounce"
+                        viewBox="0 0 24 24"
+                        fill="none">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                </a>
             </div>        
         </section>
     )
