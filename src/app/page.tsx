@@ -1,10 +1,12 @@
 "use client";         //Tells next.js to treat this file as a client component - meaning that it will run in the browser.
 import {MainLander} from "@/components/MainLander";
+import {AboutMe} from "@/components/AboutMe"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-linear-to-t/hsl from-gray-800 to-slate-950">
+    <main className="min-h-screen bg-linear-to-t/hsl from-gray-800 to-slate-950 from-background via-background">
       <MainLander></MainLander>
+      <AboutMe></AboutMe>
 
       {/* <div className="flex items-center justify-center h-dvh">
         <h1 className="text-6xl md:text-7xl font-mono font-bold text-white mb-10 

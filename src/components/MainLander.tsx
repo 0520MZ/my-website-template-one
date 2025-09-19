@@ -21,7 +21,7 @@ export function MainLander(){
 
     return(
         <section id="main" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-muted/20" />
+            <div className="absolute inset-0" />
             <div className="opacity-5" />  {/*absolute inset-0 bg-[url('/glowing-circuit-matrix-stockcake.jpg')]*/}
             <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 {/* This div is for the main title text of this landing page*/}
@@ -91,7 +91,7 @@ export function MainLander(){
                 </div>
 
                 {/* Scroll down button */}
-                <a href="#nextSection" className="absolute -translate-x-1/2">
+                <a href="#about" className="absolute -translate-x-1/2">
                     <svg xmlns="http://www.w3.org/2000/svg"
                         className="w-10 h-10 stroke-zinc-400 animate-bounce"
                         viewBox="0 0 24 24"
