@@ -50,7 +50,7 @@ export function MainLander(){
                     />
                 </div>
                 {/*Basic short description, change later*/}
-                <p className="text-xl text-zinc-400 mx-auto mb-5">
+                <p className="text-xl text-zinc-400 mx-auto mb-5 m-8">
                     Welcome to my website! Not much here for now...</p>
 
                 {/*Adds navigation buttons*/}
