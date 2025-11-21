@@ -20,7 +20,7 @@ export function AboutMe() {
                         </CardHeader>
                         <CardContent className="text-center text-zinc-400 text-lg mb-6 lg:text-xl">
                             Worked on machine learning projects with ResNet and BYOL for robotics, alongside
-                            frontend web development in React and Next.js, delivering practical and impactful solutions.
+                            frontend web development in React and Next.js.
                         </CardContent>
                     </Card>
                     <Card className="bg-zinc-800 border-zinc-900 hover:border-sky-700 
